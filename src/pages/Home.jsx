@@ -1,3 +1,7 @@
 export default function Home() {
-  return <div>Hallo</div>;
+  return (
+    <>
+      <h1>Andrea Luthra Linddas</h1>
+    </>
+  );
 }
