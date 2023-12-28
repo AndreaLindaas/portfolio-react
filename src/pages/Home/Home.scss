@@ -1,0 +1,22 @@
+.card {
+  max-width: 500px;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 3px;
+  .portrait {
+    text-align: center;
+    img {
+      border-radius: 50%;
+      width: 100px;
+    }
+  }
+  h1,
+  h2 {
+    text-align: center;
+  }
+  .year {
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 768px) {
+}
