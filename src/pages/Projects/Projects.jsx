@@ -8,6 +8,7 @@ import {
   CardContent,
   Typography,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 export default function Projects() {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
@@ -30,21 +31,23 @@ export default function Projects() {
     return projects.map((project) => {
       return (
         <>
-          <Card sx={{ maxWidth: 345 }} className="card">
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image={createImageUrl(project.images[0].asset._ref)}
-                alt="green iguana"
-              />
-              <CardContent className="cardContent">
-                <Typography gutterBottom variant="h5" component="div">
-                  {project.title}
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
+          <Link to={`/prosjekter/${project._id}`}>
+            <Card sx={{ maxWidth: 345 }} className="card">
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image={createImageUrl(project.images[0].asset._ref)}
+                  alt="image of project"
+                />
+                <CardContent className="cardContent">
+                  <Typography gutterBottom variant="h5" component="div">
+                    {project.title}
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Link>
         </>
       );
     });
