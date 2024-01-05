@@ -1,0 +1,25 @@
+.container {
+  padding: 20px;
+  h1 {
+    color: #000;
+  }
+  .schoolOrFreelance {
+    display: flex;
+    justify-content: center;
+  }
+  .projectImage {
+    width: 100%;
+  }
+  .buttons {
+    text-align: center;
+    .button {
+      background-color: var(--jet);
+      color: #fff;
+      margin: 0 10px 30px 10px;
+      width: 200px;
+    }
+  }
+  .bold {
+    font-weight: bold;
+  }
+}

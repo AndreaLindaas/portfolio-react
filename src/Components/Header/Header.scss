@@ -1,5 +1,39 @@
 .menuIcon {
   text-align: right;
-  background-color: var(--yellow);
-  padding: 20px 10px 20px 0;
+  background-color: var(--jet);
+  padding: 20px 10px 0 0;
+  color: var(--hot-pink);
+  svg {
+    font-size: 50px;
+  }
+}
+ul.headerList {
+  text-align: right;
+  background-color: var(--hot-pink);
+  margin: 0;
+  padding: 20px;
+
+  li {
+    padding: 10px 0;
+    font-size: 20px;
+    a {
+      color: #000;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  ul.headerList {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background-color: var(--jet);
+
+    li {
+      padding: 0;
+
+      a {
+        color: var(--hot-pink);
+      }
+    }
+  }
 }

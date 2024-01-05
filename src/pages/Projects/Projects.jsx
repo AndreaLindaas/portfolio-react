@@ -1,6 +1,7 @@
 import "./Projects.scss";
 import { useEffect, useState } from "react";
-import { IMAGE_BASE_URL, PROJECTS_URL } from "../../lib/constants";
+import { PROJECTS_URL } from "../../lib/constants";
+import { createImageUrl } from "../../lib/utils";
 import {
   Card,
   CardMedia,
@@ -21,11 +22,6 @@ export default function Projects() {
         console.error("Error fetching data:", error);
       });
   }, []);
-
-  const createImageUrl = (imageUrl) => {
-    const fixUrl = imageUrl.replace("image-", "").replace("-jpg", ".jpg");
-    return IMAGE_BASE_URL + fixUrl;
-  };
 
   const renderProjects = () => {
     return projects.map((project) => {
@@ -54,7 +50,7 @@ export default function Projects() {
   };
   return (
     <>
-      <h1>Mine Prosjekter</h1>
+      <h1 className="myProjects">Mine Prosjekter</h1>
       <div className="cardContainer">{renderProjects()}</div>
     </>
   );

@@ -1,5 +1,5 @@
-.card {
-  max-width: 500px;
+.container {
+  max-width: 600px;
   background-color: #fff;
   margin: 0 auto;
   border-radius: 3px;
@@ -8,15 +8,36 @@
     img {
       border-radius: 50%;
       width: 100px;
+      margin-top: 40px;
     }
   }
   h1,
   h2 {
     text-align: center;
   }
+  p {
+    margin: 20px;
+  }
+  ul {
+    margin: 20px;
+    li {
+      padding: 0 0 10px 0;
+    }
+  }
   .year {
     font-weight: bold;
   }
+  .contact {
+    text-align: center;
+    color: #000;
+    a {
+      border-bottom: 1px solid #000;
+      color: #000;
+    }
+  }
 }
 @media screen and (min-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
 }

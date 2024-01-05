@@ -1,4 +1,4 @@
-h1 {
+h1.myProjects {
   text-align: center;
   color: #fff;
 }
@@ -11,7 +11,7 @@ h1 {
     margin: 40px 0;
     width: 90vw;
     .cardContent {
-      background-color: var(--yellow);
+      background-color: var(--hot-pink);
     }
   }
 }

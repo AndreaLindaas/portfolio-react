@@ -1,9 +1,9 @@
 import "./Home.scss";
-
+import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <>
-      <div className="card">
+      <div className="container">
         <div className="portrait">
           <img src="./assets/media/andrea.jpg" />
         </div>
@@ -53,6 +53,14 @@ export default function Home() {
           </li>
         </ul>
         <h2>Kontakt</h2>
+        <div className="contact">
+          <Link
+            to="https://www.linkedin.com/in/andrea-luthra-lindaas-12a94a231/"
+            target="_blank"
+          >
+            LinkedIn
+          </Link>
+        </div>
       </div>
     </>
   );
