@@ -21,7 +21,6 @@ export default function Project() {
       .then((result) => {
         setProject(result.result);
         setIsLoading(false);
-        console.log(result.result);
       });
   }, []);
   const schoolOrFreelance = () => {

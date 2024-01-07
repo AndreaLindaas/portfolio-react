@@ -30,12 +30,14 @@ export default function Projects() {
           <Link to={`/prosjekter/${project._id}`}>
             <Card sx={{ maxWidth: 345 }} className="card">
               <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image={createImageUrl(project.images[0].asset._ref)}
-                  alt="image of project"
-                />
+                {project.images && (
+                  <CardMedia
+                    component="img"
+                    height="140"
+                    image={createImageUrl(project.images[0].asset._ref)}
+                    alt="image of project"
+                  />
+                )}
                 <CardContent className="cardContent">
                   <Typography gutterBottom variant="h5" component="div">
                     {project.title}
