@@ -14,6 +14,16 @@ export default function Home() {
           velferdsteknologi. Har kurs og opplæring innen flere løsninger innen
           velferdsteknologi.
         </p>
+        <h2>Relevant arbeid</h2>
+
+        <ul>
+          <li>
+            <span className="year">2020</span> Kartlegger og vurderer innførsel
+            samt bruk av GPS som velferdsteknologi. Drar hjem til brukere som
+            har søkt, intervjuer og vurderer blant annet egnethet for å avgjøre
+            om velferdsteknologi skal innføres for denne brukeren.
+          </li>
+        </ul>
         <h2>Utdanning</h2>
         <ul>
           <li>
